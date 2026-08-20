@@ -1,0 +1,263 @@
+/* Container - pure black/dark base */
+.animated-bg-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  overflow: hidden;
+  z-index: -1;
+  pointer-events: auto;
+}
+
+/* 
+  Mesh Gradients 
+  Increased blur vastly and lowered opacities for that cloudy, premium tech look
+*/
+.mesh-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(180px); /* Massively increased blur */
+  opacity: 0.25;
+  mix-blend-mode: screen;
+  pointer-events: none;
+  animation: floatMesh 40s infinite alternate ease-in-out; /* Slowed down */
+  transform: translateZ(0);
+}
+
+.blob-teal {
+  background: rgba(45, 212, 191, 0.3); /* Muted teal */
+  width: 50vw;
+  height: 50vw;
+  top: -15%;
+  left: -10%;
+  animation-delay: 0s;
+}
+
+.blob-blue {
+  background: rgba(59, 130, 246, 0.25); /* Muted blue */
+  width: 60vw;
+  height: 60vw;
+  bottom: -20%;
+  right: -15%;
+  animation-delay: -10s;
+}
+
+.blob-purple {
+  background: rgba(139, 92, 246, 0.2); /* Muted purple */
+  width: 45vw;
+  height: 45vw;
+  top: 25%;
+  left: 20%;
+  animation-delay: -20s;
+}
+
+@keyframes floatMesh {
+  0% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(4vw, -4vh) scale(1.05); }
+  66% { transform: translate(-3vw, 3vh) scale(0.95); }
+  100% { transform: translate(-4vw, -2vh) scale(1.02); }
+}
+
+/* Subtle Grid Overlay */
+.grid-overlay {
+  position: absolute;
+  inset: 0;
+  background-size: 60px 60px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+  mask-image: radial-gradient(ellipse at center, black 20%, transparent 80%);
+  -webkit-mask-image: radial-gradient(ellipse at center, black 20%, transparent 80%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Animated Noise Layer for Texture (Film Grain) */
+.noise-overlay {
+  position: absolute;
+  inset: -100%;
+  width: 300%;
+  height: 300%;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.035; /* Keep this very low */
+  pointer-events: none;
+  mix-blend-mode: overlay;
+  z-index: 2;
+  animation: noiseAnimation 8s steps(10) infinite;
+}
+
+@keyframes noiseAnimation {
+  0% { transform: translate(0, 0); }
+  10% { transform: translate(-5%, -5%); }
+  20% { transform: translate(-10%, 5%); }
+  30% { transform: translate(5%, -10%); }
+  40% { transform: translate(-5%, 15%); }
+  50% { transform: translate(-10%, 5%); }
+  60% { transform: translate(15%, 0); }
+  70% { transform: translate(0, 10%); }
+  80% { transform: translate(-15%, 0); }
+  90% { transform: translate(10%, 5%); }
+  100% { transform: translate(5%, 0); }
+}
+
+/* Mouse Follow Glow - Much larger, softer radius */
+.mouse-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    800px circle at var(--mouse-x) var(--mouse-y),
+    rgba(255, 255, 255, 0.035), 
+    transparent 40%
+  );
+  pointer-events: none;
+  z-index: 3;
+}
+
+/* Network Nodes (RescueMeal Lines) */
+.network-group {
+  position: absolute;
+  pointer-events: none;
+  z-index: 4;
+}
+
+.network-line {
+  stroke: rgba(255, 255, 255, 0.04);
+  stroke-width: 1px;
+}
+
+.network-node {
+  fill: rgba(255, 255, 255, 0.15);
+}
+
+.glowing-node {
+  fill: rgba(255, 255, 255, 0.4);
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.3));
+}
+
+/* Particles */
+.particle {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  pointer-events: none;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+  z-index: 5;
+}
+
+/* Vignette to frame the layout and hide harsh edges */
+.vignette-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, transparent 40%, rgba(0,0,0, 0.8) 100%);
+  pointer-events: none;
+  z-index: 10;
+}
+
+.animated-bg{
+    position:absolute;
+    inset:0;
+    overflow:hidden;
+    background:#050816;
+    z-index:-1;
+}
+
+/* Aurora */
+
+.gradient{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(180px);
+    opacity:.35;
+    animation:float 18s ease-in-out infinite alternate;
+}
+
+.gradient-1{
+    width:650px;
+    height:650px;
+
+    background:#14b8a6;
+
+    top:-150px;
+    left:-120px;
+}
+
+.gradient-2{
+
+    width:550px;
+    height:550px;
+
+    background:#2563eb;
+
+    right:-120px;
+    bottom:-150px;
+
+    animation-delay:4s;
+}
+
+.gradient-3{
+
+    width:500px;
+    height:500px;
+
+    background:#7c3aed;
+
+    top:25%;
+    left:40%;
+
+    animation-delay:8s;
+}
+
+@keyframes float{
+
+0%{
+
+transform:translate(0,0) scale(1);
+
+}
+
+100%{
+
+transform:translate(80px,-60px) scale(1.2);
+
+}
+
+}
+
+/* ===========================
+   Floating Particles
+=========================== */
+
+.particle{
+    position:absolute;
+    bottom:-20px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.4);
+
+    animation:particleFloat linear infinite;
+}
+
+@keyframes particleFloat{
+
+0%{
+transform:translateY(0);
+opacity:0;
+}
+
+20%{
+opacity:.4;
+}
+
+80%{
+opacity:.4;
+}
+
+100%{
+transform:translateY(-120vh);
+opacity:0;
+}
+
+}
