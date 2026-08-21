@@ -1,48 +1,67 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Hero.css';
+import heroImage from '../../assets/images/hero-image.png';
 
 const Hero = () => {
   return (
-    <section className="hero-section">
-      {/* Animated Background Mesh */}
-      <div className="bg-glow teal-glow"></div>
-      <div className="bg-glow blue-glow"></div>
-      
-      <div className="hero-container">
-        <div className="hero-content">
-          <h1 className="hero-title fade-up-1">
-            Rescue Food.<br />
-            <span className="text-accent">Feed Hope.</span>
-          </h1>
-          <p className="hero-subtitle fade-up-2">
-            A technology platform connecting restaurants and volunteers to eliminate food waste. Turn surplus into sustenance with a tap.
-          </p>
-          <div className="hero-actions fade-up-3">
-            <Link to="/donate" className="btn-solid">
-              Donate Food <span className="arrow">→</span>
-            </Link>
-            <Link to="/campaigns" className="btn-glass">
-              Explore Campaigns
-            </Link>
-          </div>
+    <div className="hero-container">
+      {/* Navbar Section */}
+      <nav className="navbar">
+        <div className="navbar-logo">
+          RescueMeal
         </div>
         
-        <div className="hero-illustration-wrapper fade-up-4">
-          <div className="floating-illustration">
-             {/* 
-                Placeholder for the 3D isometric illustration from the design. 
-                Using a premium glassmorphic placeholder to match the aesthetic. 
-             */}
-            <div className="illustration-glass-card">
-              <div className="isometric-layer top"></div>
-              <div className="isometric-layer middle"></div>
-              <div className="isometric-layer bottom"></div>
-            </div>
-          </div>
+        <ul className="navbar-links">
+          <li className="active"><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#impact">Impact</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+
+        <div className="navbar-actions">
+          <a href="#login" className="login-link">Login</a>
+          <button className="btn-primary">Start Rescue</button>
         </div>
-      </div>
-    </section>
+        
+        {/* Simple mobile menu icon (visible only on mobile) */}
+        <div className="mobile-menu-icon">
+          ☰
+        </div>
+      </nav>
+
+      {/* Main Hero Content */}
+      <main className="hero-main">
+        {/* Left Side: Text Content */}
+        <section className="hero-text-section">
+          <div className="badge">
+            <span className="leaf-icon">🍃</span>
+            Helping Reduce Food Waste
+          </div>
+
+          <h1 className="hero-title">
+            Rescue Food. <br />
+            <span className="highlight-green">Feed Hope.</span>
+          </h1>
+
+          <p className="hero-description">
+            RescueMeal connects restaurants, NGOs, and volunteers to safely distribute surplus food, reduce food waste, and provide meals to people in need.
+          </p>
+
+          <div className="hero-buttons">
+            <button className="btn-primary btn-large">Donate Food</button>
+            <button className="btn-outline btn-large">Learn More</button>
+          </div>
+        </section>
+
+        {/* Right Side: Image Content */}
+        <section className="hero-image-section">
+          <div className="image-container">
+            <img src={heroImage} alt="Volunteers rescuing food" />
+          </div>
+        </section>
+      </main>
+    </div>
   );
 };
 
