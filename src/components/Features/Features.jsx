@@ -1,6 +1,5 @@
 import React from 'react';
 import './Features.css';
-// Importing icons from react-icons
 import { 
   FaUtensils, 
   FaTruck, 
@@ -11,7 +10,6 @@ import {
 } from 'react-icons/fa';
 
 const Features = () => {
-  // Array of feature data to render dynamically using .map()
   const featuresData = [
     {
       id: 1,
@@ -53,7 +51,6 @@ const Features = () => {
 
   return (
     <section className="features-section">
-      {/* Top Header Section */}
       <div className="features-header">
         <div className="features-badge">
           ⭐ Why Choose RescueMeal
@@ -68,7 +65,6 @@ const Features = () => {
         </p>
       </div>
 
-      {/* Features Grid Layout */}
       <div className="features-grid">
         {featuresData.map((feature) => (
           <div className="feature-card" key={feature.id}>

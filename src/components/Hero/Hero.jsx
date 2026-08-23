@@ -5,7 +5,6 @@ import heroImage from '../../assets/images/hero-image.png';
 const Hero = () => {
   return (
     <div className="hero-container">
-      {/* Navbar Section */}
       <nav className="navbar">
         <div className="navbar-logo">
           RescueMeal
@@ -14,7 +13,7 @@ const Hero = () => {
         <ul className="navbar-links">
           <li className="active"><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#how-it-works">Contact</a></li>
           <li><a href="#impact">Impact</a></li>
           <li><a href="#faq">FAQ</a></li>
         </ul>
@@ -23,16 +22,12 @@ const Hero = () => {
           <a href="#login" className="login-link">Login</a>
           <button className="btn-primary">Start Rescue</button>
         </div>
-        
-        {/* Simple mobile menu icon (visible only on mobile) */}
         <div className="mobile-menu-icon">
           ☰
         </div>
       </nav>
 
-      {/* Main Hero Content */}
       <main className="hero-main">
-        {/* Left Side: Text Content */}
         <section className="hero-text-section">
           <div className="badge">
             <span className="leaf-icon">🍃</span>
@@ -54,7 +49,6 @@ const Hero = () => {
           </div>
         </section>
 
-        {/* Right Side: Image Content */}
         <section className="hero-image-section">
           <div className="image-container">
             <img src={heroImage} alt="Volunteers rescuing food" />

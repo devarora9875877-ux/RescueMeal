@@ -1,7 +1,8 @@
 /* Base Styles & Google Fonts (Optional but keeps it modern) */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
-
-/* Main Container - Ensuring it fits 100vh on desktop */
+body{
+  margin: 0px;
+}
 .hero-container {
   min-height: 100vh;
   display: flex;
@@ -11,8 +12,6 @@
   padding: 0 5%;
   box-sizing: border-box;
 }
-
-/* ================= Navbar Styles ================= */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -49,8 +48,6 @@
 .navbar-links a:hover {
   color: #1b7a43;
 }
-
-/* Active link styling (green underline) */
 .navbar-links .active a {
   color: #1b7a43;
   font-weight: 600;
@@ -76,8 +73,6 @@
   cursor: pointer;
   color: #1b7a43;
 }
-
-/* ================= Buttons ================= */
 .btn-primary {
   background-color: #2e7d32;
   color: white;
@@ -114,12 +109,10 @@
   padding: 14px 32px;
   font-size: 1.1rem;
 }
-
-/* ================= Hero Content Styles ================= */
 .hero-main {
   display: flex;
-  flex: 1; /* Makes this section grow to fill remaining 100vh space */
-  align-items: center; /* Vertically centers the content */
+  flex: 1; 
+  align-items: center;
   justify-content: space-between;
   gap: 40px;
   padding: 20px 0;
@@ -129,8 +122,6 @@
   flex: 1;
   max-width: 550px;
 }
-
-/* Badge Styling */
 .badge {
   display: inline-flex;
   align-items: center;
@@ -150,7 +141,6 @@
   font-size: 1rem;
 }
 
-/* Typography */
 .hero-title {
   font-size: 4rem;
   font-weight: 800;
@@ -174,8 +164,6 @@
   display: flex;
   gap: 16px;
 }
-
-/* Image Section Styling */
 .hero-image-section {
   flex: 1;
   display: flex;
@@ -191,15 +179,11 @@
 
 .image-container img {
   width: 100%;
-  max-width: 600px; /* Limits the image from getting too large */
+  max-width: 600px;
   height: auto;
   border-radius: 12px;
   display: block;
 }
-
-/* ================= Media Queries (Responsive Design) ================= */
-
-/* Tablet & Mobile Screens */
 @media (max-width: 992px) {
   .hero-main {
     flex-direction: column;
@@ -222,8 +206,6 @@
   .hero-buttons {
     justify-content: center;
   }
-
-  /* Hide center navbar links on mobile and show hamburger menu */
   .navbar-links {
     display: none;
   }
@@ -236,8 +218,6 @@
     display: block;
   }
 }
-
-/* Small Mobile Screens */
 @media (max-width: 576px) {
   .hero-title {
     font-size: 2.5rem;
