@@ -19,13 +19,13 @@
   color: white;
   padding: 0.4rem 1rem;
   border-radius: 20px;
-  font-size: 0.9rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
 .about-title {
   margin-top: 1rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #636764;
   border: 1px solid #2e7d32;
   padding: 10px 20px;
@@ -53,5 +53,6 @@
   flex: 1;
   color: black;
   line-height: 1.6;
+  font-size: 1.5rem;
 }
 
