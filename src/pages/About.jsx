@@ -6,7 +6,7 @@ function About() {
     <div className="about-container">
       <div className="about-header">
         <span className="about-badge">✪ Helping Reduce Food Waste ✪</span>
-        <h1 className="about-title">Wanna Know Something About Us</h1>
+        <h1 className="about-title">Wanna Know Something <span>About Us</span></h1>
       </div>
 
       <div className="about-section">

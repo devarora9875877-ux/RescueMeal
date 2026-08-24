@@ -26,7 +26,13 @@
 .about-title {
   margin-top: 1rem;
   font-size: 2rem;
-  color: #2e7d32;
+  color: #636764;
+  border: 1px solid #2e7d32;
+  padding: 10px 20px;
+  border-radius: 40px;
+  span{
+    color:#2e7d32;
+  }
 }
 
 .about-section {
