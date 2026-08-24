@@ -43,6 +43,7 @@ function Volunteers() {
             <Link to="/">Home</Link>
             <Link to="/donate">Donate Food</Link>
             <Link to="/donors">Donors</Link>
+            <Link to="/ngos">NGOs</Link>
           </div>
         </nav>
 

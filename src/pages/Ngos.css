@@ -1,0 +1,180 @@
+.ngos-page {
+  min-height: 100vh;
+  padding: 24px 5% 80px;
+  box-sizing: border-box;
+  background: #f8fafc;
+  font-family: "Inter", sans-serif;
+}
+
+.ngos-navbar {
+  max-width: 1136px;
+  margin: 0 auto 60px;
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border-radius: 50px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+.ngos-logo {
+  color: #1b7a43;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.ngos-nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.ngos-nav-links a {
+  color: #1b7a43;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.ngos-main {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.ngos-heading {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.ngos-badge {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 8px 16px;
+  color: #166534;
+  background: #f0fdf4;
+  border: 1px solid #dcfce7;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.ngos-heading h1 {
+  margin: 0 0 14px;
+  color: #1e293b;
+  font-size: 3rem;
+}
+
+.ngos-heading h1 span {
+  color: #2e7d32;
+}
+
+.ngos-heading p {
+  margin: 0;
+  color: #64748b;
+  font-size: 1.05rem;
+}
+
+.ngos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.ngo-card {
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.ngo-focus {
+  display: inline-block;
+  padding: 6px 12px;
+  color: #166534;
+  background: #f0fdf4;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.ngo-card h2 {
+  margin: 18px 0 14px;
+  color: #1e293b;
+  font-size: 1.3rem;
+}
+
+.ngo-card p {
+  margin: 8px 0;
+  color: #64748b;
+}
+
+.ngo-card strong {
+  color: #334155;
+}
+
+.ngos-cta {
+  margin-top: 40px;
+  padding: 28px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  color: #ffffff;
+  background: #2e7d32;
+  border-radius: 16px;
+}
+
+.ngos-cta h2 {
+  margin: 0 0 8px;
+}
+
+.ngos-cta p {
+  margin: 0;
+  color: #dcfce7;
+}
+
+.ngos-button {
+  flex-shrink: 0;
+  padding: 12px 24px;
+  color: #2e7d32;
+  background: #ffffff;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  .ngos-page {
+    padding: 16px 4% 60px;
+  }
+
+  .ngos-navbar {
+    margin-bottom: 40px;
+    padding: 14px 22px;
+    flex-direction: column;
+    gap: 12px;
+    border-radius: 24px;
+  }
+
+  .ngos-nav-links {
+    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .ngos-heading h1 {
+    font-size: 2.2rem;
+  }
+
+  .ngos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ngos-cta {
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

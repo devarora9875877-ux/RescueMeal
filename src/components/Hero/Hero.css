@@ -31,7 +31,7 @@ body{
 .navbar-links {
   display: flex;
   list-style: none;
-  gap: 22px;
+  gap: 12px;
   margin: 0;
   padding: 0;
 }

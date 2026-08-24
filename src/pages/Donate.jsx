@@ -36,6 +36,7 @@ function Donate() {
             <Link to="/" className="donate-home-link">Home</Link>
             <Link to="/donors" className="donate-home-link">Donors</Link>
             <Link to="/volunteers" className="donate-home-link">Volunteers</Link>
+            <Link to="/ngos" className="donate-home-link">NGOs</Link>
           </div>
         </nav>
 
