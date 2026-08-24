@@ -1,0 +1,14 @@
+.notfound-full {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.notfound-full-image {
+  width: 1000px;
+  height: 650px;
+  object-fit: cover;
+  display: flex;
+  justify-self: center;
+  margin: auto;
