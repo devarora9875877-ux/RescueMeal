@@ -75,6 +75,8 @@ body{
 .btn-primary {
   background-color: #2e7d32;
   color: white;
+  display: inline-block;
+  text-decoration: none;
   border: none;
   border-radius: 30px;
   padding: 10px 24px;

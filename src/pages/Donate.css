@@ -1,0 +1,179 @@
+.donate-page {
+  min-height: 100vh;
+  padding: 24px 5% 80px;
+  box-sizing: border-box;
+  background: #f8fafc;
+  font-family: "Inter", sans-serif;
+}
+
+.donate-navbar {
+  max-width: 1136px;
+  margin: 0 auto 60px;
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border-radius: 50px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+.donate-logo {
+  color: #1b7a43;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.donate-home-link {
+  color: #1b7a43;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.donate-main {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.donate-heading {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.donate-badge {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 8px 16px;
+  color: #166534;
+  background: #f0fdf4;
+  border: 1px solid #dcfce7;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.donate-heading h1 {
+  margin: 0 0 14px;
+  color: #1e293b;
+  font-size: 3rem;
+}
+
+.donate-heading h1 span {
+  color: #2e7d32;
+}
+
+.donate-heading p {
+  margin: 0;
+  color: #64748b;
+  font-size: 1.05rem;
+}
+
+.donate-form {
+  padding: 36px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.donate-form h2 {
+  margin: 0 0 28px;
+  color: #1e293b;
+  text-align: center;
+}
+
+.donate-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+.donate-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #334155;
+  font-weight: 600;
+}
+
+.donate-form input,
+.donate-form textarea {
+  padding: 13px 14px;
+  color: #1e293b;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 9px;
+  font: inherit;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+.donate-form input:focus,
+.donate-form textarea:focus {
+  border-color: #2e7d32;
+  outline: 2px solid #dcfce7;
+}
+
+.donate-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.donate-wide-field {
+  grid-column: 1 / -1;
+}
+
+.donate-button {
+  width: 100%;
+  margin-top: 28px;
+  padding: 14px 24px;
+  color: #ffffff;
+  background: #2e7d32;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.donate-button:hover {
+  background: #1e5a22;
+}
+
+.donate-success {
+  margin: 20px 0 0;
+  padding: 12px;
+  color: #166534;
+  background: #f0fdf4;
+  border-radius: 9px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .donate-page {
+    padding: 16px 4% 60px;
+  }
+
+  .donate-navbar {
+    margin-bottom: 40px;
+    padding: 14px 22px;
+  }
+
+  .donate-heading h1 {
+    font-size: 2.2rem;
+  }
+
+  .donate-form {
+    padding: 24px 18px;
+  }
+
+  .donate-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .donate-wide-field {
+    grid-column: auto;
+  }
+}

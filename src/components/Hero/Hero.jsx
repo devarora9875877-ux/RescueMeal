@@ -1,4 +1,4 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 import './Hero.css';
 import heroImage from '../../assets/images/hero-image.png';
 
@@ -20,7 +20,7 @@ const Hero = () => {
 
         <div className="navbar-actions">
           <a href="#login" className="login-link">Login</a>
-          <button className="btn-primary">Start Rescue</button>
+          <Link to="/donate" className="btn-primary">Start Rescue</Link>
         </div>
         <div className="mobile-menu-icon">
           ☰
@@ -44,7 +44,7 @@ const Hero = () => {
           </p>
 
           <div className="hero-buttons">
-            <button className="btn-primary btn-large">Donate Food</button>
+            <Link to="/donate" className="btn-primary btn-large">Donate Food</Link>
             <button className="btn-outline btn-large">Learn More</button>
           </div>
         </section>
