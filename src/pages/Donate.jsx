@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import Footer from "../components/Footer/Footer";
+import Navbar from "../components/Navbar/Navbar";
 import "./Donate.css";
 
 function Donate() {
@@ -30,15 +30,7 @@ function Donate() {
   return (
     <>
       <div className="donate-page">
-        <nav className="donate-navbar">
-          <Link to="/" className="donate-logo">RescueMeal</Link>
-          <div className="donate-nav-links">
-            <Link to="/" className="donate-home-link">Home</Link>
-            <Link to="/donors" className="donate-home-link">Donors</Link>
-            <Link to="/volunteers" className="donate-home-link">Volunteers</Link>
-            <Link to="/ngos" className="donate-home-link">NGOs</Link>
-          </div>
-        </nav>
+        <Navbar />
 
         <main className="donate-main">
           <section className="donate-heading">

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer/Footer";
+import Navbar from "../components/Navbar/Navbar";
 import "./Donors.css";
 
 function Donors() {
@@ -37,15 +38,7 @@ function Donors() {
   return (
     <>
       <div className="donors-page">
-        <nav className="donors-navbar">
-          <Link to="/" className="donors-logo">RescueMeal</Link>
-          <div className="donors-nav-links">
-            <Link to="/">Home</Link>
-            <Link to="/donate">Donate Food</Link>
-            <Link to="/volunteers">Volunteers</Link>
-            <Link to="/ngos">NGOs</Link>
-          </div>
-        </nav>
+        <Navbar />
 
         <main className="donors-main">
           <section className="donors-heading">

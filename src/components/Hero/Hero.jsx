@@ -1,33 +1,12 @@
 import { Link } from 'react-router-dom';
+import Navbar from '../Navbar/Navbar';
 import './Hero.css';
 import heroImage from '../../assets/images/hero-image.png';
 
 const Hero = () => {
   return (
     <div className="hero-container">
-      <nav className="navbar">
-        <div className="navbar-logo">
-          RescueMeal
-        </div>
-        
-        <ul className="navbar-links">
-          <li className="active"><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#how-it-works">Contact</a></li>
-          <li><a href="#impact">Impact</a></li>
-          <li><Link to="/donors">Donors</Link></li>
-          <li><Link to="/volunteers">Volunteers</Link></li>
-          <li><Link to="/ngos">NGOs</Link></li>
-        </ul>
-
-        <div className="navbar-actions">
-          <a href="#login" className="login-link">Login</a>
-          <Link to="/donate" className="btn-primary">Start Rescue</Link>
-        </div>
-        <div className="mobile-menu-icon">
-          ☰
-        </div>
-      </nav>
+      <Navbar />
 
       <main className="hero-main">
         <section className="hero-text-section">

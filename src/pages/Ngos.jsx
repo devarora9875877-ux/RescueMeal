@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer/Footer";
+import Navbar from "../components/Navbar/Navbar";
 import "./Ngos.css";
 
 function Ngos() {
@@ -37,15 +38,7 @@ function Ngos() {
   return (
     <>
       <div className="ngos-page">
-        <nav className="ngos-navbar">
-          <Link to="/" className="ngos-logo">RescueMeal</Link>
-          <div className="ngos-nav-links">
-            <Link to="/">Home</Link>
-            <Link to="/donate">Donate Food</Link>
-            <Link to="/donors">Donors</Link>
-            <Link to="/volunteers">Volunteers</Link>
-          </div>
-        </nav>
+        <Navbar />
 
         <main className="ngos-main">
           <section className="ngos-heading">

@@ -8,69 +8,8 @@ body{
   flex-direction: column;
   background-color: #F8FAFC;
   font-family: 'Inter', sans-serif;
-  padding: 0 5%;
+  padding: 24px 5% 0;
   box-sizing: border-box;
-}
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #ffffff;
-  padding: 16px 32px;
-  border-radius: 50px;
-  margin-top: 24px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
-}
-
-.navbar-logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #1b7a43;
-}
-
-.navbar-links {
-  display: flex;
-  list-style: none;
-  gap: 12px;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar-links a {
-  text-decoration: none;
-  color: #4b5563;
-  font-weight: 500;
-  font-size: 1rem;
-  transition: color 0.2s ease;
-}
-
-.navbar-links a:hover {
-  color: #1b7a43;
-}
-.navbar-links .active a {
-  color: #1b7a43;
-  font-weight: 600;
-  border-bottom: 2px solid #1b7a43;
-  padding-bottom: 4px;
-}
-
-.navbar-actions {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.login-link {
-  text-decoration: none;
-  color: #1b7a43;
-  font-weight: 500;
-}
-
-.mobile-menu-icon {
-  display: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-  color: #1b7a43;
 }
 .btn-primary {
   background-color: #2e7d32;
@@ -206,17 +145,6 @@ body{
 
   .hero-buttons {
     justify-content: center;
-  }
-  .navbar-links {
-    display: none;
-  }
-  
-  .navbar-actions {
-    display: none;
-  }
-
-  .mobile-menu-icon {
-    display: block;
   }
 }
 @media (max-width: 576px) {

@@ -6,36 +6,6 @@
   font-family: "Inter", sans-serif;
 }
 
-.volunteers-navbar {
-  max-width: 1136px;
-  margin: 0 auto 60px;
-  padding: 16px 32px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #ffffff;
-  border-radius: 50px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
-}
-
-.volunteers-logo {
-  color: #1b7a43;
-  font-size: 1.5rem;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.volunteers-nav-links {
-  display: flex;
-  gap: 24px;
-}
-
-.volunteers-nav-links a {
-  color: #1b7a43;
-  font-weight: 600;
-  text-decoration: none;
-}
-
 .volunteers-main {
   width: 100%;
   max-width: 1000px;
@@ -148,20 +118,6 @@
 @media (max-width: 700px) {
   .volunteers-page {
     padding: 16px 4% 60px;
-  }
-
-  .volunteers-navbar {
-    margin-bottom: 40px;
-    padding: 14px 22px;
-    flex-direction: column;
-    gap: 12px;
-    border-radius: 24px;
-  }
-
-  .volunteers-nav-links {
-    gap: 14px;
-    flex-wrap: wrap;
-    justify-content: center;
   }
 
   .volunteers-heading h1 {
