@@ -42,6 +42,7 @@ function Donors() {
           <div className="donors-nav-links">
             <Link to="/">Home</Link>
             <Link to="/donate">Donate Food</Link>
+            <Link to="/volunteers">Volunteers</Link>
           </div>
         </nav>
 
