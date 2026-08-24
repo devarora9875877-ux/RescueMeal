@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap');
-
 :root {
   --rm-green: #2e7d32;
   --rm-green-dark: #1e5a22;
@@ -99,14 +97,5 @@
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .about-container {
-    animation: none;
-  }
-  .about-image img {
-    transition: none;
   }
 }
