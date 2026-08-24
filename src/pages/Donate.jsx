@@ -32,7 +32,10 @@ function Donate() {
       <div className="donate-page">
         <nav className="donate-navbar">
           <Link to="/" className="donate-logo">RescueMeal</Link>
-          <Link to="/" className="donate-home-link">Home</Link>
+          <div className="donate-nav-links">
+            <Link to="/" className="donate-home-link">Home</Link>
+            <Link to="/donors" className="donate-home-link">Donors</Link>
+          </div>
         </nav>
 
         <main className="donate-main">

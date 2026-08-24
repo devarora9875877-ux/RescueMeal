@@ -15,7 +15,7 @@ const Hero = () => {
           <li><a href="#about">About</a></li>
           <li><a href="#how-it-works">Contact</a></li>
           <li><a href="#impact">Impact</a></li>
-          <li><a href="#faq">FAQ</a></li>
+          <li><Link to="/donors">Donors</Link></li>
         </ul>
 
         <div className="navbar-actions">
