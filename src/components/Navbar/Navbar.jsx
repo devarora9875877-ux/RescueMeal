@@ -13,6 +13,7 @@ function Navbar() {
       <div className="site-navbar-links">
         <Link to="/">Home</Link>
         <Link to="/About">About</Link>
+        <Link to="/Contact">Contact</Link>
         <Link to="/Campaigns">Campaigns</Link>
         <Link to="/donors">Donors</Link>
         <Link to="/volunteers">Volunteers</Link>
