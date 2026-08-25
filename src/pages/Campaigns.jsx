@@ -31,7 +31,8 @@ function Campaigns() {
 
   return (
     <>
-    <Navbar/>
+    <div className="campaigns-navbar">
+      <Navbar/>
     <div className="campaigns-container">
       <h1 className="campaigns-title">Food Donation <span>Campaigns</span></h1>
       <p className="campaigns-subtitle">
@@ -51,6 +52,7 @@ function Campaigns() {
           </div>
         ))}
       </div>
+    </div>
     </div>
     <Footer/>
     </>

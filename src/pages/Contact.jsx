@@ -7,6 +7,7 @@ function Contact() {
 
   return (
     <>
+    <div className="contact-navbar">
     <Navbar/>
     <div className="contact-container">
       <h1 className="contact-title">Contact Us</h1>
@@ -19,7 +20,9 @@ function Contact() {
         <button type="submit" className="contact-button">Send Message</button>
       </form>
     </div>
+    </div>
     <Footer/>
+
     </>
   );
 }

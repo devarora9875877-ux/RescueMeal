@@ -6,8 +6,10 @@ import "./About.css";
 function About() {
   return (
     <>
+    <div className="about-navbar">
     <Navbar/>
     <div className="about-container">
+      
       <div className="about-header">
         <span className="about-badge">✪ Helping Reduce Food Waste ✪</span>
         <h1 className="about-title">Wanna Know Something <span>About Us</span></h1>
@@ -34,6 +36,7 @@ function About() {
           </p>
         </div>
       </div>
+    </div>
     </div>
     <Footer/>
     </>
