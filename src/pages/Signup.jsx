@@ -1,48 +1,69 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { FiMail, FiLock, FiArrowLeft } from 'react-icons/fi';
-import './Login.css';
+import { FiUser, FiMail, FiLock, FiArrowLeft } from 'react-icons/fi';
+import './Login.css'; 
 
-const Login = () => {
+const Signup = () => {
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [errorMessage, setErrorMessage] = useState('');
-  const [successMessage, setSuccessMessage] = useState('');
+  const [error, setError] = useState('');
+  
   const navigate = useNavigate();
 
-  const handleLogin = (e) => {
+  const handleSignup = (e) => {
     e.preventDefault();
     
     const users = JSON.parse(localStorage.getItem('users')) || [];
-    const matchedUser = users.find((user) => user.email === email && user.password === password);
+    
+    const userExists = users.some((user) => user.email === email);
 
-    if (matchedUser) {
-      setErrorMessage('');
-      setSuccessMessage('Login Successful!');
-      localStorage.setItem('currentUser', JSON.stringify(matchedUser));
-      
-      setTimeout(() => {
-        navigate('/Donate');
-      }, 1000);
-    } else {
-      setSuccessMessage('');
-      setErrorMessage('Invalid details or not registered yet!');
+    if (userExists) {
+      setError('An account with this email already exists!');
+      return;
     }
+
+    const newUser = {
+      name: name,
+      email: email,
+      password: password
+    };
+
+    users.push(newUser);
+    localStorage.setItem('users', JSON.stringify(users));
+    
+    navigate('/login');
   };
 
   return (
     <div className="login-page">
       <div className="login-container">
         <div className="login-header">
-          <span className="login-badge">WELCOME BACK</span>
-          <h1 className="login-title">Login to Your Account</h1>
+          <span className="login-badge">NEW HERE?</span>
+          <h1 className="login-title">Create an Account</h1>
           <p className="login-subtitle">
-            Sign in to continue using RescueMeal and manage your food rescue activities.
+            Join RescueMeal today and start managing your food rescue activities.
           </p>
         </div>
 
         <div className="login-card">
-          <form className="login-form" onSubmit={handleLogin}>
+          <form className="login-form" onSubmit={handleSignup}>
+            <div className="form-group">
+              <label htmlFor="name">Full Name</label>
+              <div className="input-wrapper">
+                <FiUser className="input-icon" />
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="John Doe"
+                  className="input-field"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  required
+                />
+              </div>
+            </div>
+
             <div className="form-group">
               <label htmlFor="email">Email Address</label>
               <div className="input-wrapper">
@@ -60,12 +81,7 @@ const Login = () => {
             </div>
 
             <div className="form-group">
-              <div className="password-header">
-                <label htmlFor="password">Password</label>
-                <a href="#" className="forgot-password">
-                  Forgot Password?
-                </a>
-              </div>
+              <label htmlFor="password">Password</label>
               <div className="input-wrapper">
                 <FiLock className="input-icon" />
                 <input
@@ -76,30 +92,26 @@ const Login = () => {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   required
+                  minLength="6"
                 />
               </div>
             </div>
 
             <button type="submit" className="login-btn">
-              Login
+              Create Account
             </button>
-            
-            {successMessage && (
-              <p style={{ color: 'green', textAlign: 'center', marginTop: '10px', fontSize: '14px' }}>
-                {successMessage}
-              </p>
-            )}
-            {errorMessage && (
-              <p style={{ color: 'red', textAlign: 'center', marginTop: '10px', fontSize: '14px' }}>
-                {errorMessage}
-              </p>
+
+            {error && (
+              <div style={{ color: 'red', textAlign: 'center', marginTop: '15px', fontSize: '13px', fontWeight: '500' }}>
+                {error}
+              </div>
             )}
           </form>
 
           <p className="signup-text">
-            Don't have an account?{' '}
-            <Link to="/signup" className="signup-link">
-              Create Account
+            Already have an account?{' '}
+            <Link to="/login" className="signup-link">
+              Login here
             </Link>
           </p>
         </div>
@@ -113,4 +125,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Signup;

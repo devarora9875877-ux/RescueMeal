@@ -1,13 +1,13 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About"
+import Contact from "./pages/Contact"
 import Campaigns from "./pages/Campaigns";
 import Donate from "./pages/Donate";
 import Donors from "./pages/Donors";
 import Volunteers from "./pages/Volunteers";
 import Ngos from "./pages/Ngos";
 import NotFound from "./pages/NotFound";
-import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -20,6 +20,8 @@ function App() {
       <Route path="/donors" element={<Donors />} />
       <Route path="/volunteers" element={<Volunteers />} />
       <Route path="/ngos" element={<Ngos />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<Signup />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

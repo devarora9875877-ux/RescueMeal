@@ -26,7 +26,9 @@ const Hero = () => {
 
           <div className="hero-buttons">
             <Link to="/donate" className="btn-primary btn-large">Donate Food</Link>
-            <button className="btn-outline btn-large">Learn More</button>
+            <Link to="/login" className="btn-primary btn-large">
+              Login
+            </Link>
           </div>
         </section>
 

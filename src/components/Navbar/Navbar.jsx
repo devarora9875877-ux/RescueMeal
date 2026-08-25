@@ -12,9 +12,9 @@ function Navbar() {
 
       <div className="site-navbar-links">
         <Link to="/">Home</Link>
-        <Link to="/About">About</Link>
-        <Link to="/Contact">Contact</Link>
-        <Link to="/Campaigns">Campaigns</Link>
+        <Link to="/about">About</Link>
+        <Link to="/contact">Contact</Link>
+        <Link to="/campaigns">Campaigns</Link>
         <Link to="/donors">Donors</Link>
         <Link to="/volunteers">Volunteers</Link>
         <Link to="/ngos">NGOs</Link>

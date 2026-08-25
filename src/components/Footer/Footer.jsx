@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css';
+import { Link } from "react-router-dom";
 import logo from '../../assets/images/logo.png';
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { MdEmail, MdPhone, MdLocationOn } from "react-icons/md";
@@ -8,9 +9,9 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        
+
         <div className="footer-top">
-          
+
           <div className="footer-col footer-left">
             <div className="footer-brand">
               <img src={logo} alt="RescueMeal Logo" className="footer-logo" />
@@ -27,11 +28,13 @@ const Footer = () => {
           <div className="footer-col footer-middle">
             <h3 className="footer-heading">QUICK LINKS</h3>
             <ul className="footer-links">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Campaigns</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">FAQs</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/campaigns">Campaigns</Link></li>
+              <li><Link to="/about">About Us</Link></li>
+              <li><Link to="/contact">Contact Us</Link></li>
+              <li><Link to="/donors">Donors</Link></li>
+              <li><Link to="/volunteers">Volunteers</Link></li>
+              <li><Link to="/ngos">NGO's</Link></li>
             </ul>
           </div>
 
@@ -57,7 +60,7 @@ const Footer = () => {
               <a href="#"><FaLinkedin /></a>
             </div>
           </div>
-          
+
         </div>
 
         <div className="footer-bottom">
