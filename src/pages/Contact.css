@@ -1,20 +1,10 @@
-:root {
-  --rm-green: #2e7d32;
-  --rm-green-dark: #1e5a22;
-  --rm-green-light: #eaf5ec;
-  --rm-amber: #e8a33d;
-  --rm-ink: #1f2421;
-  --rm-muted: #6b7570;
-  --rm-border: #e4e8e4;
-}
-
 .contact-container {
   max-width: 640px;
   margin: 3rem auto;
   padding: 3rem 2.5rem;
   background: #ffffff;
   border-radius: 16px;
-  color: var(--rm-ink);
+  color: #1f2421;
   font-family: "Inter", "Segoe UI", Arial, sans-serif;
   box-shadow: 0 12px 34px rgba(0, 0, 0, 0.06);
   animation: rm-fade-up 0.6s ease both;
@@ -23,7 +13,7 @@
 .contact-title {
   font-family: "Poppins", "Segoe UI", Arial, sans-serif;
   font-weight: 700;
-  color: var(--rm-ink);
+  color: #1f2421;
   text-align: center;
   font-size: 2.1rem;
   margin-bottom: 0.5rem;
@@ -34,14 +24,14 @@
   display: block;
   width: 48px;
   height: 3px;
-  background: var(--rm-green);
+  background: #2e7d32;
   border-radius: 2px;
   margin: 0.9rem auto 0;
 }
 
 .contact-subtitle {
   text-align: center;
-  color: var(--rm-muted);
+  color: #6b7570;
   margin-bottom: 2rem;
   font-size: 1.02rem;
 }
@@ -56,9 +46,9 @@
 .contact-textarea {
   padding: 0.9rem 1rem;
   border-radius: 10px;
-  border: 1px solid var(--rm-border);
+  border: 1px solid #e4e8e4;
   background: #fbfcfb;
-  color: var(--rm-ink);
+  color: #1f2421;
   font-family: inherit;
   font-size: 0.98rem;
   transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
@@ -72,9 +62,9 @@
 .contact-input:focus,
 .contact-textarea:focus {
   outline: none;
-  border-color: var(--rm-green);
+  border-color: #2e7d32;
   background: #ffffff;
-  box-shadow: 0 0 0 3px var(--rm-green-light);
+  box-shadow: 0 0 0 3px #eaf5ec;
 }
 
 .contact-textarea {
@@ -86,7 +76,7 @@
   padding: 0.9rem;
   border-radius: 10px;
   border: none;
-  background: var(--rm-green);
+  background: #2e7d32;
   color: #ffffff;
   font-weight: 600;
   font-size: 1rem;
@@ -95,7 +85,7 @@
 }
 
 .contact-button:hover {
-  background: var(--rm-green-dark);
+  background: #1e5a22;
   transform: translateY(-1px);
 }
 
@@ -113,3 +103,4 @@
     transform: translateY(0);
   }
 }
+

@@ -1,4 +1,6 @@
 import React from "react";
+import Navbar from "../components/Navbar/Navbar";
+import Footer from "../components/Footer/Footer";
 import "./Campaigns.css";
 
 function Campaigns() {
@@ -27,6 +29,8 @@ function Campaigns() {
   ];
 
   return (
+    <>
+    <Navbar/>
     <div className="campaigns-container">
       <h1 className="campaigns-title">Food Donation <span>Campaigns</span></h1>
       <p className="campaigns-subtitle">
@@ -47,6 +51,8 @@ function Campaigns() {
         ))}
       </div>
     </div>
+    <Footer/>
+    </>
   );
 }
 
