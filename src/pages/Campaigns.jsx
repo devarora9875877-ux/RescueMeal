@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
+import { MdTimer, MdPhone, MdLocationOn } from "react-icons/md";
 import "./Campaigns.css";
 
 function Campaigns() {
@@ -42,9 +43,9 @@ function Campaigns() {
           <div key={index} className="ngo-card">
             <div className="ngo-info">
               <h3>{ngo.name}</h3>
-              <p className="ngo-detail"><strong>Location:</strong> {ngo.location}</p>
-              <p className="ngo-detail"><strong>Contact:</strong> {ngo.contact}</p>
-              <p className="ngo-detail"><strong>Donation Time:</strong> {ngo.time}</p>
+              <p className="ngo-detail"><strong><MdLocationOn/>Location:</strong> {ngo.location}</p>
+              <p className="ngo-detail"><strong><MdPhone/>Contact:</strong> {ngo.contact}</p>
+              <p className="ngo-detail"><strong><MdTimer/>Donation Time:</strong> {ngo.time}</p>
             </div>
             <img src={ngo.image} alt={ngo.name} className="ngo-image" />
           </div>
