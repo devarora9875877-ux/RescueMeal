@@ -7,12 +7,14 @@ import Donors from "./pages/Donors";
 import Volunteers from "./pages/Volunteers";
 import Ngos from "./pages/Ngos";
 import NotFound from "./pages/NotFound";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/About" element={<About />} />
+      <Route path="/Contact" element={<Contact />} />
       <Route path="/Campaigns" element={<Campaigns />} />
       <Route path="/donate" element={<Donate />} />
       <Route path="/donors" element={<Donors />} />
