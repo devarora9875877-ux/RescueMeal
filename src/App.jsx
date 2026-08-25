@@ -8,6 +8,8 @@ import Donors from "./pages/Donors";
 import Volunteers from "./pages/Volunteers";
 import Ngos from "./pages/Ngos";
 import NotFound from "./pages/NotFound";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 
 function App() {
   return (
