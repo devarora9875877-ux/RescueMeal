@@ -74,6 +74,7 @@
 }
 
 .donate-form input,
+.donate-form select,
 .donate-form textarea {
   padding: 13px 14px;
   color: #1e293b;
@@ -86,6 +87,7 @@
 }
 
 .donate-form input:focus,
+.donate-form select:focus,
 .donate-form textarea:focus {
   border-color: #2e7d32;
   outline: 2px solid #dcfce7;
