@@ -19,6 +19,9 @@ function Navbar() {
         <Link to="/volunteers">Volunteers</Link>
         <Link to="/ngos">NGOs</Link>
       </div>
+      <div className="profile">
+        <Link to="/profile"><img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="profile" /></Link>
+      </div>
     </nav>
   );
 }
