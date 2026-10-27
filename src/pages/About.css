@@ -1,0 +1,95 @@
+.about-navbar {
+  padding: 24px 5% 0;
+  font-family: 'Inter', sans-serif;
+}
+.about-container {
+  max-width: 1100px;
+  margin: 3rem auto;
+  padding: 3rem 2.5rem;
+  background: #ffffff;
+  border-radius: 16px;
+  color: #1f2421;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  animation: rm-fade-up 0.6s ease both;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.about-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: #eaf5ec;
+  color: #1e5a22;
+  padding: 0.5rem 1.2rem;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border: 1px solid #d3e8d6;
+}
+
+.about-title {
+  margin-top: 1.2rem;
+  font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #1f2421;
+  line-height: 1.25;
+}
+
+.about-title span {
+  color: #2e7d32;
+}
+
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.about-image {
+  flex: 1;
+  min-width: 280px;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(46, 125, 50, 0.15);
+  transition: transform 0.4s ease;
+}
+
+.about-image img:hover {
+  transform: translateY(-4px);
+}
+
+.about-text {
+  flex: 1;
+  min-width: 280px;
+  color: #1f2421;
+  line-height: 1.75;
+  font-size: 1.1rem;
+}
+
+.about-text p {
+  margin: 0;
+}
+
+@keyframes rm-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+body{
+  margin: 0px;
+}
+.hero-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #F8FAFC;
+  font-family: 'Inter', sans-serif;
+  padding: 24px 5% 0;
+  box-sizing: border-box;
+}
+.btn-primary {
+  background-color: #2e7d32;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #1e5a22;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #2e7d32;
+  border: 1px solid #4caf50;
+  border-radius: 30px;
+  padding: 10px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-outline:hover {
+  background-color: #f0fdf4;
+}
+
+.btn-large {
+  padding: 14px 32px;
+  font-size: 1.1rem;
+}
+.hero-main {
+  display: flex;
+  flex: 1; 
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 20px 0;
+}
+
+.hero-text-section {
+  flex: 1;
+  max-width: 550px;
+}
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #64748b;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+  margin-bottom: 24px;
+  border: 1px solid #f1f5f9;
+}
+
+.leaf-icon {
+  font-size: 1rem;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #1e293b;
+  line-height: 1.1;
+  margin: 0 0 20px 0;
+}
+
+.highlight-green {
+  color: #2e7d32;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 36px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+}
+.hero-image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image-container {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f1f5f9;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}
+@media (max-width: 992px) {
+  .hero-main {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 40px 0;
+  }
+
+  .hero-text-section {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+}
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-buttons button {
+    width: 100%;
+  }
+}
