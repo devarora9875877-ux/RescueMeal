@@ -1,6 +1,5 @@
 .donate-page {
-  min-height: 100vh;
-  padding: 24px 5% 80px;
+  padding: 0 5% 80px;
   box-sizing: border-box;
   background: #f8fafc;
   font-family: "Inter", sans-serif;
@@ -145,7 +144,7 @@
 
 @media (max-width: 600px) {
   .donate-page {
-    padding: 16px 4% 60px;
+    padding: 0 4% 60px;
   }
 
   .donate-heading h1 {

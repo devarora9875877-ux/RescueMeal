@@ -1,15 +1,13 @@
 import { Link } from "react-router-dom";
-import Navbar from "../components/Navbar/Navbar";
-import Footer from "../components/Footer/Footer";
 import "./About.css";
 
 function About() {
   return (
     <>
     <div className="about-navbar">
-    <Navbar/>
+
     <div className="about-container">
-      
+
       <div className="about-header">
         <span className="about-badge">✪ Helping Reduce Food Waste ✪</span>
         <h1 className="about-title">Wanna Know Something <span>About Us</span></h1>
@@ -17,8 +15,8 @@ function About() {
 
       <div className="about-section">
         <div className="about-image">
-          <img 
-            src="https://t3.ftcdn.net/jpg/03/19/40/54/360_F_319405443_lnH13ovYQLkC4ELcX9awjrkDAuZBiRPK.jpg" 
+          <img
+            src="https://t3.ftcdn.net/jpg/03/19/40/54/360_F_319405443_lnH13ovYQLkC4ELcX9awjrkDAuZBiRPK.jpg"
             alt="Food rescue illustration"
           />
         </div>
@@ -46,7 +44,7 @@ function About() {
       </div>
     </div>
     </div>
-    <Footer/>
+
     </>
   );
 }

@@ -1,13 +1,10 @@
 import { Link } from 'react-router-dom';
-import Navbar from '../Navbar/Navbar';
 import './Hero.css';
 import heroImage from '../../assets/images/hero-image.png';
 
 const Hero = () => {
   return (
     <div className="hero-container">
-      <Navbar />
-
       <main className="hero-main">
         <section className="hero-text-section">
           <div className="badge">

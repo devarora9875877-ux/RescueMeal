@@ -1,5 +1,3 @@
-import Navbar from "../components/Navbar/Navbar";
-import Footer from "../components/Footer/Footer";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import "./Volunteers.css";
@@ -40,7 +38,6 @@ function Volunteers() {
   return (
     <>
       <div className="volunteers-page">
-        <Navbar />
         <main className="volunteers-main">
           <section className="volunteers-heading">
             <span className="volunteers-badge">Rescue Heroes</span>
@@ -70,7 +67,6 @@ function Volunteers() {
         </main>
       </div>
 
-      <Footer />
     </>
   );
 }

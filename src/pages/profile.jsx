@@ -1,7 +1,5 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Navbar from "../components/Navbar/Navbar";
-import Footer from "../components/Footer/Footer";
 import { useAuth } from "../context/AuthContext";
 import "./profile.css";
 
@@ -14,7 +12,7 @@ function Profile() {
   const [saved, setSaved] = useState(false);
 
   if (!currentUser) {
-    return <><Navbar /><main className="profile-container profile-empty"><h1>Please log in to view your profile.</h1><p>Your account details will appear here after you sign in.</p><Link to="/login" className="profile-action">Go to Login</Link></main><Footer /></>;
+    return <><main className="profile-container profile-empty"><h1>Please log in to view your profile.</h1><p>Your account details will appear here after you sign in.</p><Link to="/login" className="profile-action">Go to Login</Link></main></>;
   }
 
   function handleSubmit(event) {
@@ -36,7 +34,7 @@ function Profile() {
 
   return (
     <>
-      <div className="profile-navbar"><Navbar />
+      <div className="profile-navbar">
         <main className="profile-container">
           <h1 className="profile-title">My <span>Profile</span></h1>
           <p className="profile-subtitle">Manage your account details.</p>
@@ -54,7 +52,7 @@ function Profile() {
               <div className="profile-actions"><button type="submit" className="profile-action">Save Changes</button><button type="button" className="profile-cancel" onClick={() => { setEditing(false); setErrors({}); }}>Cancel</button></div>
             </form>}
         </main>
-      </div><Footer />
+      </div>
     </>
   );
 }

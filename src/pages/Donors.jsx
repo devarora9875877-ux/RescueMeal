@@ -1,5 +1,3 @@
-import Navbar from "../components/Navbar/Navbar";
-import Footer from "../components/Footer/Footer";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import "./Donors.css";
@@ -40,7 +38,6 @@ function Donors() {
   return (
     <>
       <div className="donors-page">
-        <Navbar />
         <main className="donors-main">
           <section className="donors-heading">
             <span className="donors-badge">Community Partners</span>
@@ -70,7 +67,6 @@ function Donors() {
         </main>
       </div>
 
-      <Footer />
     </>
   );
 }

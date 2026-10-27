@@ -1,0 +1,19 @@
+.main-layout {
+  min-height: 100vh;
+  background: #f8fafc;
+  font-family: "Inter", sans-serif;
+}
+
+.layout-header {
+  padding: 24px 5% 60px;
+}
+
+.layout-header .site-navbar {
+  margin-bottom: 0;
+}
+
+@media (max-width: 700px) {
+  .layout-header {
+    padding: 16px 4% 40px;
+  }
+}

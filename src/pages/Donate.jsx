@@ -1,5 +1,3 @@
-import Navbar from "../components/Navbar/Navbar";
-import Footer from "../components/Footer/Footer";
 import { useContext, useState } from "react";
 import { useDispatch } from "react-redux";
 import FormField from "../components/FormField/FormField";
@@ -98,7 +96,6 @@ function Donate() {
   return (
     <>
       <div className="donate-page">
-        <Navbar />
         <main className="donate-main">
           <section className="donate-heading">
             <span className="donate-badge">🍃 Make a Difference</span>
@@ -256,7 +253,6 @@ function Donate() {
         </main>
       </div>
 
-      <Footer />
     </>
   );
 }

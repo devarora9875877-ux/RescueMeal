@@ -1,10 +1,10 @@
 .campaigns-navbar {
-  padding: 24px 5% 0;
+  padding: 0 5%;
   font-family: 'Inter', sans-serif;
 }
 .campaigns-container {
   max-width: 1000px;
-  margin: 3rem auto;
+  margin: 0 auto 3rem;
   padding: 3rem 2.5rem;
   background: #ffffff;
   border-radius: 16px;

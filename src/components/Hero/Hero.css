@@ -3,12 +3,12 @@ body{
   margin: 0px;
 }
 .hero-container {
-  min-height: 100vh;
+  min-height: calc(100vh - 156px);
   display: flex;
   flex-direction: column;
   background-color: #F8FAFC;
   font-family: 'Inter', sans-serif;
-  padding: 24px 5% 0;
+  padding: 0 5%;
   box-sizing: border-box;
 }
 .btn-primary {
@@ -51,7 +51,7 @@ body{
 }
 .hero-main {
   display: flex;
-  flex: 1; 
+  flex: 1;
   align-items: center;
   justify-content: space-between;
   gap: 40px;

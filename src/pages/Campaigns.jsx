@@ -1,7 +1,5 @@
 import { useMemo, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import Navbar from "../components/Navbar/Navbar";
-import Footer from "../components/Footer/Footer";
 import { MdTimer, MdPhone, MdLocationOn } from "react-icons/md";
 import { toggleInterest } from "../store/campaignSlice";
 import "./Campaigns.css";
@@ -20,7 +18,7 @@ function Campaigns() {
 
   return (
     <>
-      <div className="campaigns-navbar"><Navbar />
+      <div className="campaigns-navbar">
         <main className="campaigns-container">
           <h1 className="campaigns-title">Food Donation <span>Campaigns</span></h1>
           <p className="campaigns-subtitle">Find NGOs and community centers where you can donate surplus food.</p>
@@ -42,7 +40,7 @@ function Campaigns() {
             {filteredNgos.length === 0 && <p className="campaign-empty">No campaigns match that search. Try another NGO name or location.</p>}
           </div>
         </main>
-      </div><Footer />
+      </div>
     </>
   );
 }

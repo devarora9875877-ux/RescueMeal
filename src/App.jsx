@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import MainLayout from "./layouts/MainLayout";
 import Home from "./pages/Home";
 import About from "./pages/About"
 import Contact from "./pages/Contact"
@@ -15,17 +16,19 @@ import Profile from "./pages/profile";
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/campaigns" element={<Campaigns />} />
-      <Route path="/donate" element={<Donate />} />
-      <Route path="/donors" element={<Donors />} />
-      <Route path="/volunteers" element={<Volunteers />} />
-      <Route path="/ngos" element={<Ngos />} />
+      <Route path="/" element={<MainLayout />}>
+        <Route index element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="campaigns" element={<Campaigns />} />
+        <Route path="donate" element={<Donate />} />
+        <Route path="donors" element={<Donors />} />
+        <Route path="volunteers" element={<Volunteers />} />
+        <Route path="ngos" element={<Ngos />} />
+        <Route path="profile" element={<Profile />} />
+      </Route>
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
-      <Route path="/profile" element={<Profile />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

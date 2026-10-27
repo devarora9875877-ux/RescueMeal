@@ -1,5 +1,3 @@
-import Navbar from "../components/Navbar/Navbar";
-import Footer from "../components/Footer/Footer";
 import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import NgoContext from "../context/NgoContext";
@@ -40,7 +38,6 @@ function Ngos() {
   return (
     <>
       <div className="ngos-page">
-        <Navbar />
         <main className="ngos-main">
           <section className="ngos-heading">
             <span className="ngos-badge">Food Relief Network</span>
@@ -75,7 +72,6 @@ function Ngos() {
         </main>
       </div>
 
-      <Footer />
     </>
   );
 }
