@@ -1,7 +1,6 @@
 import { createContext, useContext, useState } from "react";
 
 const AuthContext = createContext();
-
 export function AuthProvider({ children }) {
   const [currentUser, setCurrentUser] = useState(() => {
     try {
@@ -10,31 +9,24 @@ export function AuthProvider({ children }) {
       return null;
     }
   });
-
   function login(user) {
     localStorage.setItem("currentUser", JSON.stringify(user));
     setCurrentUser(user);
   }
-
   function logout() {
     localStorage.removeItem("currentUser");
     setCurrentUser(null);
   }
-
   return (
     <AuthContext.Provider value={{ currentUser, login, logout }}>
       {children}
     </AuthContext.Provider>
   );
 }
-
-// eslint-disable-next-line react-refresh/only-export-components
 export function useAuth() {
   const context = useContext(AuthContext);
-
   if (!context) {
     throw new Error("useAuth must be used inside AuthProvider");
   }
-
   return context;
 }
