@@ -1,9 +1,11 @@
-import { Link } from "react-router-dom";
-import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar/Navbar";
+import Footer from "../components/Footer/Footer";
+import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 import "./Donors.css";
 
 function Donors() {
+  const donationCount = useSelector((state) => state.submissions.donations);
   const donors = [
     {
       id: 1,
@@ -39,12 +41,12 @@ function Donors() {
     <>
       <div className="donors-page">
         <Navbar />
-
         <main className="donors-main">
           <section className="donors-heading">
             <span className="donors-badge">Community Partners</span>
             <h1>Meet Our <span>Food Donors</span></h1>
             <p>Local businesses sharing surplus food and supporting people in need.</p>
+            <p><strong>Food donation forms completed this session: {donationCount}</strong></p>
           </section>
 
           <section className="donors-grid" aria-label="Food donor list">

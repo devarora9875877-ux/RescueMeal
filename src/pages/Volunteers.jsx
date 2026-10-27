@@ -1,9 +1,11 @@
-import { Link } from "react-router-dom";
-import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar/Navbar";
+import Footer from "../components/Footer/Footer";
+import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 import "./Volunteers.css";
 
 function Volunteers() {
+  const volunteerCount = useSelector((state) => state.submissions.volunteers);
   const volunteers = [
     {
       id: 1,
@@ -39,12 +41,12 @@ function Volunteers() {
     <>
       <div className="volunteers-page">
         <Navbar />
-
         <main className="volunteers-main">
           <section className="volunteers-heading">
             <span className="volunteers-badge">Rescue Heroes</span>
             <h1>Meet Our <span>Food Volunteers</span></h1>
             <p>People giving their time to collect food and deliver it safely.</p>
+            <p><strong>Volunteer forms completed this session: {volunteerCount}</strong></p>
           </section>
 
           <section className="volunteers-grid" aria-label="Food volunteer list">

@@ -1,10 +1,12 @@
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import NgoContext from "../context/NgoContext";
 import "./Ngos.css";
 
 function Ngos() {
+  const { setSelectedNgo } = useContext(NgoContext);
   const [ngos, setNgos] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
@@ -57,6 +59,7 @@ function Ngos() {
                   <h2>{ngo.name}</h2>
                   <p><strong>Location:</strong> {ngo.location}</p>
                   <p><strong>Active Centers:</strong> {ngo.centers}</p>
+                  <Link to="/donate" className="ngo-select-link" onClick={() => setSelectedNgo(ngo)}>Choose this NGO</Link>
                 </article>
               ))}
             </section>

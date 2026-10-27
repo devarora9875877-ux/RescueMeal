@@ -1,10 +1,15 @@
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { useDispatch } from "react-redux";
 import FormField from "../components/FormField/FormField";
+import NgoContext from "../context/NgoContext";
+import { recordSubmission } from "../store/submissionsSlice";
 import "./Donate.css";
 
 function Donate() {
+  const dispatch = useDispatch();
+  const { selectedNgo } = useContext(NgoContext);
   const [formData, setFormData] = useState({
     userType: "donor",
     name: "",
@@ -86,6 +91,7 @@ function Donate() {
       return;
     }
 
+    dispatch(recordSubmission(formData.userType));
     setSubmitted(true);
   }
 
@@ -98,6 +104,7 @@ function Donate() {
             <span className="donate-badge">🍃 Make a Difference</span>
             <h1>Choose Your Role. <span>Help Others.</span></h1>
             <p>Donate surplus food or volunteer to help it reach people in need.</p>
+            {selectedNgo && <p className="donate-selected-ngo">Selected NGO: {selectedNgo.name}</p>}
           </section>
 
           <form className="donate-form" onSubmit={handleSubmit} noValidate>
