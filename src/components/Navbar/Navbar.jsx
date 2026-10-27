@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/images/Green-logo.png";
 import { useAuth } from "../../context/AuthContext";
 import "./Navbar.css";
@@ -14,13 +14,13 @@ function Navbar() {
       </div>
 
       <div className="site-navbar-links">
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/contact">Contact</Link>
-        <Link to="/campaigns">Campaigns</Link>
-        <Link to="/donors">Donors</Link>
-        <Link to="/volunteers">Volunteers</Link>
-        <Link to="/ngos">NGOs</Link>
+        <NavLink to="/" end>Home</NavLink>
+        <NavLink to="/about">About</NavLink>
+        <NavLink to="/contact">Contact</NavLink>
+        <NavLink to="/campaigns">Campaigns</NavLink>
+        <NavLink to="/donors">Donors</NavLink>
+        <NavLink to="/volunteers">Volunteers</NavLink>
+        <NavLink to="/ngos">NGOs</NavLink>
       </div>
       <div className="profile">
         {currentUser && <span className="welcome-user">Hi, {currentUser.name || "User"}</span>}

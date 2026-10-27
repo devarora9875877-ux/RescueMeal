@@ -77,6 +77,12 @@
   color: #1e5a22;
 }
 
+.site-navbar-links a.active {
+  color: #1e5a22;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
 @media (max-width: 700px) {
   .site-navbar {
     margin-bottom: 40px;
