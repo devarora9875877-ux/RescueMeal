@@ -64,3 +64,14 @@
   font-size: 1rem;
   color: #1f2421;
 }
+
+.profile-edit-form { display: flex; flex-direction: column; gap: .65rem; margin-top: 1.5rem; }
+.profile-edit-form input { width: 100%; padding: .85rem 1rem; border: 1px solid #d8e0d9; border-radius: 9px; font: inherit; box-sizing: border-box; }
+.profile-edit-form input:focus { outline: 2px solid #cce8d0; border-color: #2e7d32; }
+.profile-action, .profile-cancel { display: inline-block; margin-top: 1.3rem; padding: .8rem 1.2rem; border: 0; border-radius: 9px; background: #2e7d32; color: white; font: inherit; font-weight: 600; text-decoration: none; cursor: pointer; }
+.profile-cancel { margin-left: .6rem; background: #e8eee9; color: #1f2421; }
+.profile-empty { text-align: center; }
+.profile-empty h1 { font-size: 1.7rem; }
+.profile-actions { display: flex; gap: .5rem; flex-wrap: wrap; }
+.profile-actions .profile-action, .profile-actions .profile-cancel { margin-top: .5rem; }
+@media (max-width: 600px) { .profile-card { flex-direction: column; text-align: center; } .profile-info h2 { font-size: 2rem; } }
