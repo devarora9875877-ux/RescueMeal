@@ -93,3 +93,10 @@
     transform: translateY(0);
   }
 }
+
+.about-actions { margin-top: 2.5rem; padding: 2rem; border-radius: 14px; background: #f3f8f3; text-align: center; }
+.about-actions h2 { margin: 0 0 .5rem; color: #1e5a22; font-family: "Poppins", "Segoe UI", Arial, sans-serif; }
+.about-actions p { color: #5f6d63; line-height: 1.6; }
+.about-action-links { display: flex; justify-content: center; gap: .8rem; flex-wrap: wrap; margin-top: 1.2rem; }
+.about-action-links a { padding: .8rem 1.1rem; border-radius: 8px; background: #2e7d32; color: white; font-weight: 600; text-decoration: none; }
+.about-action-links a + a { background: white; color: #1e5a22; border: 1px solid #b9d9be; }

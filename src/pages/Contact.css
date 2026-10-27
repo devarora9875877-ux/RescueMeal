@@ -108,3 +108,8 @@
   }
 }
 
+
+.contact-form label, .profile-edit-form label, .campaign-search-label { color: #35423a; font-weight: 600; font-size: .95rem; }
+.form-error { display: block; color: #b42318; font-size: .88rem; margin-top: -.7rem; }
+.form-success { padding: .9rem 1rem; margin: 0 0 1.2rem; border-radius: 8px; color: #1e5a22; background: #eaf5ec; border: 1px solid #c9e5ce; line-height: 1.5; }
+.contact-input[aria-invalid="true"], .contact-textarea[aria-invalid="true"], .profile-edit-form input[aria-invalid="true"] { border-color: #b42318; }
