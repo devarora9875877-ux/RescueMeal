@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import "./About.css";
@@ -34,6 +34,14 @@ function About() {
             valued and lives are uplifted. Whether you are a donor, volunteer, or
             someone in need — RescueMeal is here to connect you.
           </p>
+        </div>
+      </div>
+      <div className="about-actions">
+        <h2>Be part of the change</h2>
+        <p>Help us make surplus food useful to the people who need it most.</p>
+        <div className="about-action-links">
+          <Link to="/campaigns">Explore Campaigns</Link>
+          <Link to="/contact">Contact Our Team</Link>
         </div>
       </div>
     </div>

@@ -1,15 +1,6 @@
-.notfound-full {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  background: #ffffff;
-}
-
-.notfound-full-image {
-  width: 1000px;
-  height: 650px;
-  object-fit: cover;
-  display: flex;
-  justify-self: center;
-  margin: auto;
-}
+.notfound-full { min-height: 100vh; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2rem; text-align: center; background: #fff; color: #1f2421; }
+.notfound-full-image { display: block; width: min(100%, 700px); max-height: 55vh; object-fit: contain; margin: 0 auto 1rem; }
+.notfound-full h1 { margin: .5rem 0; font-size: clamp(1.8rem, 4vw, 2.6rem); }
+.notfound-full p { color: #6b7570; line-height: 1.6; }
+.notfound-home { display: inline-block; margin-top: .8rem; padding: .85rem 1.25rem; border-radius: 9px; background: #2e7d32; color: #fff; font-weight: 600; text-decoration: none; }
+.notfound-home:hover { background: #1e5a22; }
