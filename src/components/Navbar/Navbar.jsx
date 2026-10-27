@@ -23,13 +23,14 @@ function Navbar() {
         <Link to="/ngos">NGOs</Link>
       </div>
       <div className="profile">
-        {currentUser ? (
-          <>
-            <span className="welcome-user">Hi, {currentUser.name || "User"}</span>
-            <button type="button" className="logout-button" onClick={logout}>Logout</button>
-          </>
-        ) : (
-          <Link to="/login">Login</Link>
+        {currentUser && <span className="welcome-user">Hi, {currentUser.name || "User"}</span>}
+        <Link to="/profile">
+          <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="profile" />
+        </Link>
+        {currentUser && (
+          <button type="button" className="logout-button" onClick={logout}>
+            Logout
+          </button>
         )}
       </div>
     </nav>
