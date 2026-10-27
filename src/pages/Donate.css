@@ -53,6 +53,12 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
 }
 
+.donate-heading .donate-selected-ngo {
+  margin-top: 12px;
+  color: #166534;
+  font-weight: 600;
+}
+
 .donate-form h2 {
   margin: 0 0 28px;
   color: #1e293b;
@@ -98,6 +104,10 @@
   resize: vertical;
 }
 
+.donate-form [aria-invalid="true"] {
+  border-color: #b91c1c;
+}
+
 .donate-wide-field {
   grid-column: 1 / -1;
 }
@@ -117,6 +127,11 @@
 
 .donate-button:hover {
   background: #1e5a22;
+}
+
+.donate-button:disabled {
+  opacity: 0.65;
+  cursor: default;
 }
 
 .donate-success {

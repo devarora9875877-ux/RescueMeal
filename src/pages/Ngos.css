@@ -51,7 +51,24 @@
   gap: 24px;
 }
 
-.ngo-card {
+.ngos-status,
+.ngos-error {
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.ngos-status {
+  color: #64748b;
+}
+
+.ngos-error {
+  color: #b91c1c;
+}
+
+.ngos-card {
   padding: 28px;
   background: #ffffff;
   border: 1px solid #e2e8f0;
@@ -69,19 +86,26 @@
   font-weight: 600;
 }
 
-.ngo-card h2 {
+.ngos-card h2 {
   margin: 18px 0 14px;
   color: #1e293b;
   font-size: 1.3rem;
 }
 
-.ngo-card p {
+.ngos-card p {
   margin: 8px 0;
   color: #64748b;
 }
 
-.ngo-card strong {
+.ngos-card strong {
   color: #334155;
+}
+
+.ngo-select-link {
+  display: inline-block;
+  margin-top: 16px;
+  color: #166534;
+  font-weight: 600;
 }
 
 .ngos-cta {

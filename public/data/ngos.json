@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Seva Food Foundation",
+    "focus": "Meal Distribution",
+    "location": "Chandigarh",
+    "centers": "4 centers"
+  },
+  {
+    "id": 2,
+    "name": "Hope Community Trust",
+    "focus": "Community Kitchen",
+    "location": "Mohali",
+    "centers": "3 centers"
+  },
+  {
+    "id": 3,
+    "name": "Annapurna Relief Group",
+    "focus": "Food Recovery",
+    "location": "Patiala",
+    "centers": "5 centers"
+  },
+  {
+    "id": 4,
+    "name": "Care for All Society",
+    "focus": "Family Support",
+    "location": "Panchkula",
+    "centers": "2 centers"
+  }
+]
